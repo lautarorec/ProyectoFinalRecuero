@@ -1,0 +1,34 @@
+@mixin card ($bg){
+	background-color: $bg; 
+	border-radius: 8px;
+	padding: 1rem;
+	width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+@mixin card__link($c, $bgc){
+    border-radius: 8px;
+    margin-top: 7px;
+    padding: 0.7rem 0.6rem;
+    color: $c;
+    text-decoration: none;
+    background-color: $bgc;
+    font-size: 15px;
+    display: inline-block;
+}
+@mixin card__title {
+	font-size: 20px;
+	margin: 14px 0 10px;
+}    
+.card-v{
+    @include card(black);
+}
+.card__link-1{
+    @include card__link(black, white);
+}
+.card__link-2{
+    @include card__link(white,green);
+}
+.card__title-v{
+    color: white;
+}

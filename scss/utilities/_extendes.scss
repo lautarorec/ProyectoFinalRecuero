@@ -1,0 +1,33 @@
+.contact{
+    background-color: grey;
+    color: beige;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 90%;
+}
+.sol{
+    padding: 0.5%;
+}
+.form1{
+    border-top: none;
+    border-bottom: none;}
+.form1--oblig{
+    @extend .form1;
+    font-size: 2rem;
+    background-color: rgb(204, 255, 0);
+}
+.contact--new{
+    @extend .contact;
+    background-color: whitesmoke;
+    padding: 2%;
+}
+@media (max-width: 768px) {
+    .contact--new{
+        padding: 7%;
+    }
+}
+.sol--new{
+    @extend .sol;
+    color: black;
+}

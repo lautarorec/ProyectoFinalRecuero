@@ -1,0 +1,20 @@
+h1{
+    background-color: black;
+    color: transparent;
+    font-size: 300%;
+    animation: animate-background 8s infinite alternate linear;
+    background-size: 50%;
+    background-position: 0 50;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: url("https://i.pinimg.com/1200x/5b/7c/f1/5b7cf1fd5da4f25ef485a4475464bf85.jpg");
+}
+@keyframes animate-background {
+    0%{
+        background-position: 0 75%;
+    }
+    100% {
+        background-position: 100% 15%;
+    }
+}

@@ -1,0 +1,382 @@
+@charset "UTF-8";
+.menu {
+  list-style: none;
+  display: flex; /* Horizontal por defecto */
+  justify-content: center; /* Centrado horizontal */
+  gap: 20px; /* Separación entre partes del navegador */
+  padding: 10px;
+  background-color: #f0f0f0;
+}
+
+/* Estilo de los enlaces */
+.menu li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s; /*efecto de transicion*/
+}
+
+ul {
+  padding: 0;
+  margin-bottom: 4%;
+}
+
+/* Efecto hover */
+.menu li a:hover {
+  background-color: #333;
+  color: white;
+}
+
+/* diseño para dispositivos moviles*/
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+body {
+  display: flex; /*declaro body como flex*/
+  flex-direction: column; /*eje principal vertical*/
+  height: 100dvh; /*ocupo toda la pantalla*/
+  text-align: center;
+  background-color: beige;
+  margin: auto;
+}
+
+main {
+  margin-bottom: auto;
+}
+main .pse h2 {
+  font-size: 3rem;
+}
+main .pse p::first-letter {
+  font-size: 4rem;
+}
+main .pse p::first-line {
+  color: grey;
+}
+
+div#carouselExampleCaptions, #carouselExampleFade {
+  height: auto;
+  width: 90%;
+  margin: auto;
+}
+
+div.formas {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 2%;
+}
+
+img.form {
+  width: 4%;
+  height: 70%;
+}
+
+.h2, .pagosyenv {
+  margin: 5%;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 4%;
+}
+
+section.flex > img {
+  width: 20%;
+  object-fit: cover;
+}
+
+.pe, .pd {
+  background-color: grey;
+}
+
+.cont {
+  width: 90%;
+  display: grid;
+  margin: auto;
+  background-color: grey;
+  border: none;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 0.5%;
+  padding: 0.5%;
+  margin-bottom: 4%;
+}
+
+.cont img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card__img {
+  width: 100%;
+}
+
+.card__title {
+  font-size: 20px;
+  margin: 14px 0 10px;
+}
+
+.card__link {
+  border-radius: 8px;
+  margin-top: 7px;
+  padding: 0.7rem 0.6rem;
+  color: white;
+  text-decoration: none;
+  background-color: grey;
+  font-size: 15px;
+  display: inline-block;
+}
+
+.card__link--modif {
+  background-color: black;
+  border: none;
+}
+
+.cont2 {
+  display: grid;
+  justify-content: center;
+  margin: auto;
+  width: 90%;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  padding: 2%;
+  margin-top: 5%;
+}
+
+div.form {
+  border-top: none;
+  border-bottom: none;
+}
+
+form {
+  display: grid;
+  gap: 12%;
+  margin: auto;
+  margin-bottom: 12%;
+}
+
+section.formulario {
+  display: flex;
+  margin: auto;
+  line-height: 180%;
+  padding: 2%;
+}
+
+textarea {
+  border-radius: 8px;
+  padding: 10px;
+  border: 0;
+}
+
+input:read-only {
+  background: #b4ba8c;
+}
+
+textarea:required {
+  border: 2px solid red !important;
+}
+
+img.flecha {
+  height: 38px;
+  width: 38px;
+  border: 0px solid grey;
+  border-radius: 25px;
+}
+
+div.pie {
+  position: relative;
+  bottom: 62px;
+  width: 41px;
+  background-color: grey;
+  left: 97%;
+}
+
+div.contflex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+img.form1 {
+  height: 10%;
+  width: 10%;
+}
+
+.fondorelleno {
+  background-color: black;
+  color: white;
+}
+
+.flex2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+section.flex2 > span > img {
+  width: 30%;
+  object-fit: cover;
+}
+
+.rotate-right {
+  transform: rotate(30deg);
+}
+
+.rotate-left {
+  transform: rotate(-30deg);
+}
+
+.h1 {
+  background-color: black;
+  margin-bottom: 4%;
+}
+
+a {
+  text-decoration: none;
+  font-size: 110%;
+}
+
+h2.contact {
+  font-size: 180%;
+  padding: 0%;
+  margin-bottom: 3%;
+}
+
+.contact {
+  background-color: grey;
+  color: beige;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 90%;
+  padding: 2%;
+}
+
+@media (max-width: 768px) {
+  .contact {
+    padding: 5%;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.contact, .contact--new {
+  background-color: grey;
+  color: beige;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 90%;
+}
+
+.sol, .sol--new {
+  padding: 0.5%;
+}
+
+.form1, .form1--oblig {
+  border-top: none;
+  border-bottom: none;
+}
+
+.form1--oblig {
+  font-size: 2rem;
+  background-color: rgb(204, 255, 0);
+}
+
+.contact--new {
+  background-color: whitesmoke;
+  padding: 2%;
+}
+
+@media (max-width: 768px) {
+  .contact--new {
+    padding: 7%;
+  }
+}
+.sol--new {
+  color: black;
+}
+
+.card-v {
+  background-color: black;
+  border-radius: 8px;
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card__link-1 {
+  border-radius: 8px;
+  margin-top: 7px;
+  padding: 0.7rem 0.6rem;
+  color: black;
+  text-decoration: none;
+  background-color: white;
+  font-size: 15px;
+  display: inline-block;
+}
+
+.card__link-2 {
+  border-radius: 8px;
+  margin-top: 7px;
+  padding: 0.7rem 0.6rem;
+  color: white;
+  text-decoration: none;
+  background-color: green;
+  font-size: 15px;
+  display: inline-block;
+}
+
+.card__title-v {
+  color: white;
+}
+
+h1 {
+  background-color: black;
+  color: transparent;
+  font-size: 300%;
+  animation: animate-background 8s infinite alternate linear;
+  background-size: 50%;
+  background-position: 0 50;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: url("https://i.pinimg.com/1200x/5b/7c/f1/5b7cf1fd5da4f25ef485a4475464bf85.jpg");
+}
+
+@keyframes animate-background {
+  0% {
+    background-position: 0 75%;
+  }
+  100% {
+    background-position: 100% 15%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
