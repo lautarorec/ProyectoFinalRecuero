@@ -8,6 +8,10 @@
 }
 .sol{
     padding: 0.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5%;  
 }
 .form1{
     border-top: none;
@@ -15,7 +19,8 @@
 .form1--oblig{
     @extend .form1;
     font-size: 2rem;
-    background-color: rgb(204, 255, 0);
+    background-color: #b4ba8c;
+    line-height: 135%
 }
 .contact--new{
     @extend .contact;
@@ -29,5 +34,5 @@
 }
 .sol--new{
     @extend .sol;
-    color: black;
+    color: black;  
 }
