@@ -239,6 +239,14 @@ img.form1{
     width:10%;
 }
 
+@media ( max-width: 768px){
+    fieldset {
+    margin-bottom: 25%;
+}
+
+
+}
+
 //FIN menú contacto//
 
 //estilos de la seccion contact--new y  formulario en utilities/_extended.scss

@@ -255,6 +255,11 @@ img.form1 {
   width: 10%;
 }
 
+@media (max-width: 768px) {
+  fieldset {
+    margin-bottom: 25%;
+  }
+}
 * {
   margin: 0;
   padding: 0;
